@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Movabites</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCdf3jjCguBINcnYcif09h8BhOlZKeDLWg",
+    authDomain: "movabites.firebaseapp.com",
+    databaseURL: "https://movabites.firebaseio.com",
+    projectId: "movabites",
+    storageBucket: "movabites.appspot.com",
+    messagingSenderId: "374536602887"
+  };
+  firebase.initializeApp(config);
+</script>
+  <script src="app.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+
+      <h1>Sign Up For Movabites</h1>
+
+      <div class="panel panel-default">
+        <div class="panel-heading">Add Your 411</div>
+        <div class="panel-body">
+          <form class="form-horizontal">
+            <div class="form-group">
+              <label for="todo-name" class="col-sm-2 control-label">Name</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="name" placeholder="First Name and Last Name">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="todo-description" class="col-sm-2 control-label">Slack Name</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="slack-name" placeholder="@yourusername">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-2"></div>
+              <div class="col-sm-10">
+                <button type="submit" id="add-item-btn" class="btn btn-default">RSVP</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+<div id= "restaurants">
+      <div class="panel">
+      <div class="panel-body">
+      <h1>FOODSPIRATION NEAR YOU</h1>
+      <ul>
+      <a class="link-to-0">
+        <img id="photoSpace0" height="200" width=300 display= inline-block/>
+  </a>
+  <a class="link-to-1">
+        <img id="photoSpace-1" height="200" width=300 display= inline-block/><br>
+  </a>
+  <a class="link-to-2">
+        <img id="photoSpace2" height="200" width=300 display= inline-block/>
+  </a>
+  <a class="link-to-3">
+        <img id="photoSpace3" height="200" width=300 display= inline-block/><br>
+  </a>
+  <a class="link-to-4">
+        <img id="photoSpace4" height="200" width=300 display= inline-block/>
+  </a>
+  <a class="link-to-5">
+        <img id="photoSpace5" height="200" width=300 display= inline-block/><br>
+  </a>
+  <a class="link-to-6">
+        <img id="photoSpace-6" height="200" width=300 display= inline-block/>
+  </a>
+  <a class="link-to-7">
+        <img id="photoSpace7" height="200" width=300 display= inline-block/><br>
+  </a>
+  <a class="link-to-8">
+        <img id="photoSpace8" height="200" width=300 display= inline-block/>
+  </a>
+
+</div>
+      <div id="rsvp-list">
+
+      </div>
+
+  </div>
+</div>
+
+</body>
+</html>
